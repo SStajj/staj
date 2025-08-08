@@ -13,7 +13,7 @@ goruntu = np.array([
 
 plt.imshow(goruntu, cmap ='gray') #goruntuyu goster gri tonlariyla
 plt.colorbar() #sagda renk deger cubugu(kac ne demek)
-plt.title('5x5 Piksel goruntu')#baslik
+plt.title('5x5 Piksel goruntu')#baslikasasdad
 plt.show() #goster
 
 print(f"Goruntu boyutu: {goruntu.shape}")
