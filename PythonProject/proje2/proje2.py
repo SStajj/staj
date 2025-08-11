@@ -112,7 +112,6 @@ def arka_plan_temizleme(goruntu: np.ndarray) -> np.ndarray:
 def metin_netlestirme(goruntu: np.ndarray) -> np.ndarray:
     """Metni hafifçe keskinleştir. Siyah-beyaz görüntülerde nazik davran."""
     gri = cv2.cvtColor(goruntu, cv2.COLOR_BGR2GRAY)
-    # Unsharp mask benzeri etki
     bulanık = cv2.GaussianBlur(gri, (0, 0), sigmaX=1.0)
     keskin = cv2.addWeighted(gri, 1.5, bulanık, -0.5, 0)
     return cv2.cvtColor(keskin, cv2.COLOR_GRAY2BGR)
@@ -160,7 +159,7 @@ def belge_tarayici(gorsel_yolu: str, kaydet: bool = False):
     return sonuc
 
 
-# Örnek kullanım
 if __name__ == "__main__":
     sonuc = belge_tarayici('ab.jpeg', kaydet=True)
+
 
