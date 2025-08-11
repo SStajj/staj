@@ -105,6 +105,5 @@ def yuz_bulaniklastir(gorsel_yolu: str, cilt_ile_dogrula: bool = True, kaydet: b
 
 
 if __name__ == "__main__":
-    # Örnek kullanım: kendi görselini vererek çağır
-    # yuz_bulaniklastir("yuz2.png", kaydet=True)
     yuz_bulaniklastir("yuz3.png", kaydet=True)
+
