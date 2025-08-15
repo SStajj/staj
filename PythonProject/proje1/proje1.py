@@ -129,5 +129,6 @@ def auto_color_correction(image_path):
 
     return final_image
 
-# Örnek kullanım
+
+
 corrected_image = auto_color_correction('lena.jpg')
